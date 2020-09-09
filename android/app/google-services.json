@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492308072754",
+    "firebase_url": "https://platzi-flutter-c900b.firebaseio.com",
+    "project_id": "platzi-flutter-c900b",
+    "storage_bucket": "platzi-flutter-c900b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492308072754:android:3432ed6946f631f0feef2b",
+        "android_client_info": {
+          "package_name": "com.example.first_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492308072754-fo9gvnjevc3578lj02u1gnciv8v9qf27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.first_app",
+            "certificate_hash": "fed73e0da7ddd5a87b42ba468e53e3e1ed7db59d"
+          }
+        },
+        {
+          "client_id": "492308072754-9p4fdbuci87da6ov8mbfmd6e30fvbos6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDldC4dQ64ujp3rI6e95kVxXVdNwWFHXF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492308072754-9p4fdbuci87da6ov8mbfmd6e30fvbos6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
