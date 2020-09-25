@@ -6,12 +6,23 @@ class GradientBack extends StatelessWidget {
   String title = "Popular";
   double height = 0.0;
 
-  GradientBack(this.title, this.height);
+  GradientBack({
+    Key key,
+    this.height
+  });
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+    //para que se adapte a la pantalla
+    double screenHeight = MediaQuery.of(context).size.height;
+    double screenWidth = MediaQuery.of(context).size.width;
+
+    if(height == null){
+      height = screenHeight;
+    }
     return Container(
+      width: screenWidth,
       height: height,
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -26,7 +37,7 @@ class GradientBack extends StatelessWidget {
         )
       ),
 
-
+/*
       child: Text(
         title,
         style: TextStyle(
@@ -36,8 +47,20 @@ class GradientBack extends StatelessWidget {
           fontWeight: FontWeight.bold
         ),
       ),
-
-      alignment: Alignment(-0.9, -0.6),
+*/    //va a tratar de dibujar un circulo partido por la mitad
+      child: FittedBox(
+        fit: BoxFit.none,
+        alignment: Alignment(-1.5 , -0.8),
+        child: Container(
+          width: screenHeight,
+          height: screenHeight,
+          decoration: BoxDecoration(
+            color: Color.fromRGBO(0, 0, 0, 0.05),
+            borderRadius: BorderRadius.circular(screenHeight / 2)
+          ),
+        )
+      ),
+      //alignment: Alignment(-0.9, -0.6),
 
     );
   }
